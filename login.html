@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+    <!-- Container for Login/Signup -->
+    <div class="form-container">
+        <!-- Login Form -->
+        <div id="loginForm">
+            <h2>Login</h2>
+            <form>
+                <div class="form-group">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" name="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p id="loginMessage" class="message"></p>
+                <p>Don't have an account? <span class="toggle-link" onclick="showSignup()">Sign Up</span></p>
+            </form>
+        </div>
+
+            <!-- Signup Form -->
+<div class="form-container hidden" id="signupForm">
+    <h2>Register</h2>
+    <form>
+      <div class="form-group">
+        <label for="signupName">Full Name:</label>
+        <input type="text" id="signupName" name="signupName" required>
+      </div>
+      <div class="form-group">
+        <label for="signupEmail">Email:</label>
+        <input type="email" id="signupEmail" name="signupEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="signupPassword">Password:</label>
+        <input type="password" id="signupPassword" name="signupPassword" required>
+      </div>
+      <div class="form-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+      <button type="submit" class="btn">Sign Up</button>
+      <p id="signupMessage" class="message"></p>
+      <p>Already have an account? <span class="toggle-link" onclick="showLogin()">Login</span></p>
+    </form>
+  </div>
+</div>
+    
+      <script src="script.js"></script>
+
+</body>
+</html>
